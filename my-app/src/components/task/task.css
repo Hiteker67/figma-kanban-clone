@@ -1,0 +1,26 @@
+.task_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.dropbox_1 {
+    display: flex;
+    justify-content: flex-end;
+}

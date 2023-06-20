@@ -1,0 +1,364 @@
+ @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
+
+ :root {
+   --app-col: #f5f6f8;
+ }
+
+ /* body {
+   font-family: "Inter";
+   font-size: 16px;
+ }
+ .trello_page {
+   display: grid;
+   grid-template-rows: max-content auto;
+   grid-template-columns: 1fr 11fr;
+   min-height: 100vh;
+   background: var(--app-col);
+ } */
+
+ .tag_container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-transform: capitalize;
+ }
+
+ .low {
+   color: #D58D49;
+   background: #DFA87433;
+ }
+
+ .high {
+   color: #D8727D;
+   background: #D8727D33;
+ }
+
+ .completed {
+   color: #68B266;
+   background: #68B26633;
+ }
+
+ .cardText {
+   color: #787486;
+ }
+
+ .image-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+ }
+
+ .cardImage {
+   height: 100%;
+   width: auto;
+ }
+
+ .avatar-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 20%;
+ }
+
+ .avatarImage {
+   height: 100%;
+   width: auto;
+ }
+
+ .footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+
+
+ .cardTag {
+   border-radius: 2px;
+   font-size: 12px;
+   height: 12px;
+   text-align: center;
+   padding: 5px;
+ }
+
+ .board-col-dot {
+   height: 10px;
+   width: 12px;
+   border-radius: 50%;
+ }
+
+ .list-header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+
+
+ .btn {
+   padding: 0.5rem;
+   color: #fff;
+   background: rgba(255, 255, 255, 0.5);
+   border-radius: 4px;
+ }
+
+ .btn.btn-text i {
+   margin-right: 0.25rem;
+ }
+
+ .app-sidebar {
+   width: 100px;
+   height: 100vh;
+   background-color: #fff;
+   border-right: 2opx solid #ebecee;
+ }
+
+ .app-sidebar .logo {
+   font-size: 1.8rem;
+   color: orange;
+   padding: 1.5rem 0.5rem;
+   text-align: center;
+ }
+
+ .app-sidebar .app-menu {
+   list-style: none;
+   padding: 0;
+   text-align: center;
+ }
+
+ .app-sidebar .app-menu li {
+   margin-bottom: 1.5rem;
+   font-size: 1.2rem;
+ }
+
+ .app-header {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   padding: 1.5rem 1rem;
+ }
+
+ .app-header .left,
+ .app-header .right {
+   display: grid;
+   grid-gap: 7px;
+ }
+
+ .app-header .left {
+   grid-template-columns: repeat(3, max-content);
+ }
+
+ .app-header .center {
+   text-align: center;
+ }
+
+ .app-header .right {
+   justify-content: end;
+   grid-template-columns: repeat(5, max-content);
+ }
+
+ .app-header .logo {
+   font-size: 1.25em;
+   color: #000;
+   font-weight: bold;
+ }
+
+ .app-header .logo i {
+   font-style: normal;
+ }
+
+ .app-header .search {
+   display: flex;
+   justify-content: space-between;
+   min-width: 200px;
+   background-color: #ebecf0;
+   color: #9d9ea3;
+   border-radius: 8px;
+   padding: 0.8rem;
+ }
+
+ .app-board {
+   display: grid;
+   grid-template-rows: max-content auto;
+ }
+
+ .app-board .board-header {
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   padding: 0.5rem;
+ }
+
+ .app-board .board-header .left,
+ .app-board .board-header .right {
+   display: grid;
+   grid-gap: 7px;
+   align-items: center;
+ }
+
+ .app-board .board-header .left .btn,
+ .app-board .board-header .right .btn {
+   color: var(--app-col);
+ }
+
+ .app-board .board-header .left {
+   grid-template-columns: repeat(4, max-content);
+ }
+
+ .app-board .board-header .right {
+   justify-content: end;
+   grid-template-columns: repeat(2, max-content);
+ }
+
+ .app-board .board-header .title {
+   font-weight: 700;
+   font-size: 1.25em;
+ }
+
+ .app-board .board-body {
+   padding: 0 0.5rem;
+   overflow-y: hidden;
+   height: 100vh;
+ }
+
+ .app-board .board-body .wrap-lists {
+   display: grid;
+   grid-auto-columns:30%;
+   grid-auto-flow: column;
+   grid-gap: 7px;
+   height: calc(100% - 16px);
+   padding-bottom: 0.5rem;
+   overflow-y: auto;
+ }
+
+ .app-board .board-body .list {
+   display: grid;
+   grid-auto-rows: max-content;
+   grid-gap: 10px;
+   padding: 0.5rem;
+   font-size: 0.875em;
+   /* background: rgba(255, 255, 255, 0.5); */
+   border-radius: 8px;
+ }
+
+ .app-board .board-body .list .list-title {
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   
+ }
+ .header-border-bottom {
+   height: 5px;
+   width: 80%;
+ }
+
+ .app-board .board-body .list .boardContentArea {
+   min-height: 15px;
+ }
+
+ .app-board .board-body .list .boardContentArea.hovered {
+   padding-bottom: 15px;
+ }
+
+ .app-board .board-body .list .card {
+   padding: 1rem 1.2rem;
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 0px 10px 17px -10px rgba(0, 0, 0, 0.59);
+   margin-bottom: 10px;
+   position: relative;
+   max-width: 275px;
+   /* height: 300px; */
+ }
+
+ .app-board .board-body .list .card.hidden {
+   display: none;
+ }
+
+ .app-board .board-body .list .card.ohhold {
+   border: 2px solid #fff;
+   transform: rotateZ(-2deg);
+ }
+
+ .app-board .board-body .list .card.anotherCardOnTop {
+   margin-top: 5px;
+ }
+
+ .app-board .board-body .list .card .cardTitle {
+   font-size: 0.8rem;
+   font-weight: bold;
+   margin-bottom: 8px;
+ }
+
+ .app-board .board-body .list .card .cardFooter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .app-board .board-body .list .card .cardFooter .label {
+   font-size: 0.7rem;
+   padding: 0.2rem 0.5rem;
+   background-color: rgba(0, 0, 0, 0.1);
+   color: rgba(0, 0, 0, 1);
+   border-radius: 0.8rem;
+ }
+
+ .app-board .board-body .list .card .cardFooter .label.color1 {
+   background-color: #ff00001a;
+   color: #ff0000;
+ }
+
+ .app-board .board-body .list .card .cardFooter .label.color2 {
+   background-color: #0020711a;
+   color: #002071;
+ }
+
+ .app-board .board-body .list .card .cardFooter .label.color3 {
+   background-color: #c560001a;
+   color: #c56000;
+ }
+
+ .app-board .board-body .list .card .cardFooter .collab {
+   display: flex;
+ }
+
+ .app-board .board-body .list .card .cardFooter .collab .collabPerson {
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin-left: -5px;
+   border: 2px solid #fff;
+   border-radius: 50%;
+   background-color: #ccc;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .app-board .board-body .list .btn-list {
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.5);
+ }
+
+ .app-tint {
+   position: fixed;
+   bottom: 1rem;
+   right: 1rem;
+ }
+
+ .app-tint input[type="color"] {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   opacity: 0;
+ }
+
+ .app-tint label {
+   font-size: 1.25em;
+   color: var(--app-col);
+   cursor: pointer;
+ }
